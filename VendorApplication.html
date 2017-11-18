@@ -1,0 +1,493 @@
+﻿<html>
+<head>
+    <title>FREYSSINET SAUDI ARABIA</title>
+    <!-- begin meta -->
+    <meta http-equiv="Content-Type" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8, IE=9, IE=10">
+    <meta name="description" content="FREYSSINET SAUDI ARABIA">
+    <meta name="keywords" content="FREYSSINET SAUDI ARABIA">
+    <meta name="author" content="Ixtendo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- end meta -->
+    <script src="jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="jquery.bxslider.css">
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" media="screen" type="text/css" href="datepicker.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="responsive.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!--<style>
+    div.input-group-option:last-child span.input-group-addon-remove{
+    display: none;
+}
+
+div.input-group-option:last-child input.form-control{
+    border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+div.input-group-option span.input-group-addon-remove{
+	cursor: pointer;
+}
+
+div.input-group-option{
+    margin-bottom: 3px;
+}
+
+
+    </style>-->
+    <!--<script>
+        
+
+        $(function(){
+    
+	$(document).on('focus', 'div.form-group-options div.input-group-option:last-child input', function(){
+        
+		var sInputGroupHtml = $(this).parent().html();
+		var sInputGroupClasses = $(this).parent().attr('class');
+		$(this).parent().parent().append('<div class="'+sInputGroupClasses+'">'+sInputGroupHtml+'</div>');
+        
+	});
+	
+	$(document).on('click', 'div.form-group-options .input-group-addon-remove', function(){
+        
+		$(this).parent().remove();
+        
+	});
+    
+});
+
+
+    </script>-->
+
+    <style>
+        /* CSS REQUIRED */
+.state-icon {
+    left: -5px;
+}
+.list-group-item-primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(66, 139, 202);
+}
+
+/* DEMO ONLY - REMOVES UNWANTED MARGIN */
+.well .list-group {
+    margin-bottom: 0px;
+    
+}
+
+    </style>
+
+    <script>
+        $(function () {
+            $('.list-group.checked-list-box .list-group-item').each(function () {
+
+                // Settings
+                var $widget = $(this),
+                    $checkbox = $('<input type="checkbox" class="hidden" />'),
+                    color = ($widget.data('color') ? $widget.data('color') : "primary"),
+                    style = ($widget.data('style') == "button" ? "btn-" : "list-group-item-"),
+                    settings = {
+                        on: {
+                            icon: 'glyphicon glyphicon-check'
+                        },
+                        off: {
+                            icon: 'glyphicon glyphicon-unchecked'
+                        }
+                    };
+
+                $widget.css('cursor', 'pointer')
+                $widget.append($checkbox);
+
+                // Event Handlers
+                $widget.on('click', function () {
+                    $checkbox.prop('checked', !$checkbox.is(':checked'));
+                    $checkbox.triggerHandler('change');
+                    updateDisplay();
+                });
+                $checkbox.on('change', function () {
+                    updateDisplay();
+                });
+
+
+                // Actions
+                function updateDisplay() {
+                    var isChecked = $checkbox.is(':checked');
+
+                    // Set the button's state
+                    $widget.data('state', (isChecked) ? "on" : "off");
+
+                    // Set the button's icon
+                    $widget.find('.state-icon')
+                        .removeClass()
+                        .addClass('state-icon ' + settings[$widget.data('state')].icon);
+
+                    // Update the button's color
+                    if (isChecked) {
+                        $widget.addClass(style + color + ' active');
+                    } else {
+                        $widget.removeClass(style + color + ' active');
+                    }
+                }
+
+                // Initialization
+                function init() {
+
+                    if ($widget.data('checked') == true) {
+                        $checkbox.prop('checked', !$checkbox.is(':checked'));
+                    }
+
+                    updateDisplay();
+
+                    // Inject the icon if applicable
+                    if ($widget.find('.state-icon').length == 0) {
+                        $widget.prepend('<span class="state-icon ' + settings[$widget.data('state')].icon + '"></span>');
+                    }
+                }
+                init();
+            });
+
+            
+        });
+
+    </script>
+
+
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+            async defer>
+    </script>
+    <script>
+        var onloadCallback = function() {
+            //remove old
+            $('.g-recaptcha').html('');
+
+            $('.g-recaptcha').each(function (i, captcha) {
+                grecaptcha.render(captcha, {
+                    'sitekey': '6LclMCwUAAAAAFoIP3GY-4xWx1uxlZhk_NojIkqy'
+                });
+            });
+        };
+    </script>
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="header">
+
+            <div id="main-menu">
+                <a href="http://www.fsa.com.sa/" id="logo"></a>
+                <ul id="main">
+                    <li>
+                        <a href="index.html">Home</a>
+
+                    </li>
+
+                    <li>
+                        <a href="VisionMission.html">Vision & Mission</a>
+                    </li>
+                    <li>
+                        <a href="Projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#">Portal</a>
+                        <ul>
+                            <li><a href="https://portal.office.com" target="_blank">Webmail</a></li>
+                            <li><a href="http://otrs.fsa.com.sa:9090/otrs/login.php" target="_blank">FSA IT Help Desk</a></li>
+                            <li><a href="http://shareapp.fsa.com.sa/" target="_blank">FSA SharePoint</a></li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="VendorApplication.html">Vendor Application</a>
+                    </li>
+                    <li>
+                        <a href="ContactUs.html">Contact Us</a>
+
+                    </li>
+
+                </ul>
+
+                <div class="col-md-3 h1">
+                    <h1>Freyssinet</h1>
+                    <h6>S A U D I&nbsp;&nbsp;&nbsp;A R A B I A</h6>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-header">
+            <a href="http://www.fsa.com.sa/" id="mobile-logo"></a> <a href="" id="menu-switch"></a>
+            <div id="mobile-main-menu">
+                <!--      <a href="?lang=--><!--" id="mob-lang">--><!--</a>-->
+                <a href="" id="close-switch"></a>
+                <ul id="main">
+                    <li>
+                        <a href="index.html">Home</a>
+
+                    </li>
+
+                    <li>
+                        <a href="VisionMission.html">Vision & Mission</a>
+                    </li>
+                    <li>
+                        <a href="Projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#">Portal</a>
+                        <ul>
+                            <li><a href="https://portal.office.com" target="_blank">Webmail</a></li>
+                            <li><a href="http://otrs.fsa.com.sa:9090/otrs/login.php" target="_blank">FSA IT Help Desk</a></li>
+                            <li><a href="http://shareapp.fsa.com.sa/" target="_blank">FSA SharePoint</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="VendorApplication.html">Vendor Application</a>
+                    </li>
+                    <li>
+                        <a href="ContactUs.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="page" class="about-us-page">
+            <h1>Vendor Application Form</h1>
+
+            <div id="inner-content">
+                <div id="featured-work">
+
+                    <form method="post" action="send_email.php" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="businessName">Legal Busines Name</label>
+                            <input type="text" class="form-control" id="businessName" name="businessName" aria-describedby="businessNameHelp" placeholder="Enter Business Name" required>
+                            <small id="businessNameHelp" class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputMainOfficeAddress">Main Office Address</label>
+                            <input type="text" class="form-control" id="MainOfficeAddress" name="MainOfficeAddress" aria-describedby="MainOfficeAddressHelp" placeholder="Enter Main Office Address" required>
+                            <small id="MainOfficeAddressHelp" class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputOfficeAddress">Local Branch Office Address</label>
+                            <input type="text" class="form-control" id="OfficeAddress" name="OfficeAddress" aria-describedby="OfficeAddressHelp" placeholder="Enter Local Branch Office Address">
+                            <small id="OfficeAddressHelp" class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputBranchesCitiesList">Number of Branches and list of Cities</label>
+                            <input type="text" class="form-control" id="InputBranchesCitiesList<" name="InputBranchesCitiesList" aria-describedby="BranchesCitiesListHelp" placeholder="Enter Branches and list of Cities If Any">
+                            <small id="BranchesCitiesListHelp" class="form-text text-muted"></small>
+                        </div>
+
+                        
+
+                        <!--<div class="form-group">
+                            <label for="InputBusinessType">Type of Business</label>
+                            <input type="text" class="form-control" id="InputBusinessType" name="InputBusinessType" aria-describedby="BusinessTypeHelp" placeholder="Type of Business and Classification(Material Supply / Subcontract)" required>
+                            <small id="BusinessTypeHelp" class="form-text text-muted"></small>
+                            </div>-->
+                            <div class="form-group">
+                                <label for="InputBusinessType">Type of Business</label>
+                                <select class="form-control" name="CboBusinessType" required>
+                                    <option value="">Choose Type of Business</option>
+                                    <option value="Service">Service</option>
+                                    <option value="Trading/Merchandising">Trading and Merchandising</option>
+                                    <option value="Manufacturing/Industrial">Manufacturing or industrial</option>
+                                    <option value="Contracting">Contracting</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+
+                                <div class="form-group">
+                                    <label for="InputBusinessCategory">Business Category / Classification</label>
+                                    <input type="text" class="form-control" id="InputBusinessCategory" name="InputBusinessCategory" aria-describedby="BusinessCategoryHelp" placeholder="Business Category / Classification">
+                                    <small id="BusinessCategoryHelp" class="form-text text-muted"></small>
+                                </div>
+
+
+                        <div class="form-group">
+                            <label for="InputBusinessType">Business Category</label>
+                            <div class="well" style="max-height: 126px;overflow: auto;width:96%;padding:0px!important;">
+                                <ul class="list-group checked-list-box">
+                                    <li class="list-group-item">00 Procurement Requirements</li>
+                                    <li class="list-group-item">01 General Requirements</li>
+                                    <li class="list-group-item">02 Existing Conditions</li>
+                                    <li class="list-group-item">03 Concrete</li>
+                                    <li class="list-group-item">04 Masonry</li>
+                                    <li class="list-group-item">05 Metals</li>
+                                    <li class="list-group-item">06 Wood, Plastics, and Composites</li>
+                                    <li class="list-group-item">07 Thermal and Moisture Protection</li>
+                                    <li class="list-group-item">08 Openings</li>
+                                    <li class="list-group-item">09 Finishes</li>
+                                    <li class="list-group-item">10 Specialties</li>
+                                    <li class="list-group-item">11 Equipment</li>
+                                    <li class="list-group-item">12 Furnishings</li>
+                                    <li class="list-group-item">13 Special Construction</li>
+                                    <li class="list-group-item">14 Conveying Equipment</li>
+                                    <li class="list-group-item">21 Fire Suppression</li>
+                                    <li class="list-group-item">22 Plumbing</li>
+                                    <li class="list-group-item">23 Heating, Ventilating, and Air-Conditioning (HVAC)</li>
+                                    <li class="list-group-item">25 Integrated Automation</li>
+                                    <li class="list-group-item">26 Electrical</li>
+                                    <li class="list-group-item">27 Communications</li>
+                                    <li class="list-group-item">28 Electronic Safety and Security</li>
+                                    <li class="list-group-item">31 Earthwork</li>
+                                    <li class="list-group-item">32 Exterior Improvements</li>
+                                    <li class="list-group-item">33 Utilities</li>
+                                    <li class="list-group-item">34 Transportation</li>
+                                    <li class="list-group-item">35 Waterway and Marine Construction</li>
+                                    <li class="list-group-item">40 Process Interconnections</li>
+                                    <li class="list-group-item">41 Material Processing and Handling Equipment</li>
+                                    <li class="list-group-item">42 Process Heating, Cooling, and Drying Equipment</li>
+                                    <li class="list-group-item">43 Process Gas and Liquid Handling, Purification, and Storage Equipment</li>
+                                    <li class="list-group-item">44 Pollution and Waste Control Equipment</li>
+                                    <li class="list-group-item">45 Industry-Specific Manufacturing Equipment</li>
+                                    <li class="list-group-item">46 Water and Wastewater Equipment</li>
+                                    <li class="list-group-item">48 Electrical Power Generation</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                            <div class="form-group">
+                                <label for="InputBusinessYears">Years in Business</label>
+                                <input type="text" class="form-control" id="InputBusinessYears" name="InputBusinessYears" aria-describedby="BusinessYearsHelp" placeholder="Years in Business" required>
+                                <small id="BusinessYearsHelp" class="form-text text-muted"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="InputTelephoneNumber">Telephone Numbers</label>
+                                <input type="text" class="form-control" id="InputTelephoneNumber" name="InputTelephoneNumber" aria-describedby="TelephoneNumberHelp" placeholder="Telephone Number" required>
+                                <small id="TelephoneNumberHelp" class="form-text text-muted"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="InputFaxNumber">Fax Number</label>
+                                <input type="text" class="form-control" id="InputFaxNumber" name="InputFaxNumber" aria-describedby="FaxNumberHelp" placeholder="Fax Number" required>
+                                <small id="FaxNumberHelp" class="form-text text-muted"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="Inputemail">Company Email Address</label>
+                                <input type="email" class="form-control" id="Inputemail" name="Inputemail" aria-describedby="emailHelp" placeholder="Company Email Address" required>
+                                <small id="emailHelp" class="form-text text-muted"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="InputWebsite">Website Address</label>
+                                <input type="text" class="form-control" id="InputWebsite" name="InputWebsite" aria-describedby="WebsiteHelp" placeholder="www.fsa.com.sa" required>
+                                <small id="WebsiteHelp" class="form-text text-muted"></small>
+                            </div>
+
+                            <div class="form-header">
+                                <h3><i class="fa fa-lock"></i> Other information:</h3>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="InputloyalClients">Name your Loyal Clients (at least 3 years straight of retention)</label>
+                                <input type="text" class="form-control" id="InputloyalClients" name="InputloyalClients" aria-describedby="loyalClientsHelp" placeholder="Name your Loyal Clients (at least 3 years straight of retention)">
+                                <small id="loyalClientsHelp" class="form-text text-muted"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="InputSalesgrowth">Sales growth from the last 3 Years</label>
+                                <select class="form-control" name="CboSalesgrowth" required>
+                                    <option value="">Choose Sales growth from the last 3 Years</option>
+                                    <option value="Up">Up</option>
+                                    <option value="Even">Even</option>
+                                    <option value="Down">Down</option>
+                                    <option value="Recovering">Recovering</option>
+                                    <option value="None">None</option>
+                                    <option value="N/A">N/A</option>
+                                </select>
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <label for="exampleInputFile">PDF Copy of Legal Business permit</label>
+                                <input type="file" class="form-control-file" id="file[]" name="file[]" aria-describedby="fileHelp">
+                                <small id="fileHelp" class="form-text text-muted"></small>
+                            </div>
+
+                            <!--<div class="form-header">
+            <h3><i class="fa fa-lock"></i> Product Description <span style="color:black; font-size:15px;">(It is important that the description of the product is accurate using common terms that a Buyer can easily find your product in our data base. Indicate top seller product by *and the very best are up to 5* or *****.) :</span></h3>
+        </div>
+
+        <div class="form-group form-group-options">
+            <div class="input-group input-group-option">
+                <input type="text" name="option[]" class="form-control" placeholder="Press tab for new line">
+                <span class="input-group-addon input-group-addon-remove">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </span>
+            </div>
+        </div>-->
+
+                            <div class="form-header">
+                                <h3><i class="fa fa-lock"></i> Product Description:</h3>
+                            </div>
+                            <div class="form-group">
+                                <label for="ProductDescTextarea"><span style="color:black; font-size:15px;">(It is important that the description of the product is accurate using common terms that a Buyer can easily find your product in our data base. Indicate top seller product by *and the very best are up to 5* or *****.) :</span></label>
+
+                                <textarea class="form-control" id="ProductDesc" name="ProductDesc" rows="3"></textarea>
+                            </div>
+
+
+                            <div class="form-header">
+                                <h3><i class="fa fa-lock"></i> Contact Person Details:</h3>
+                            </div>
+                            <div class="form-group">
+                                <label for="InputContactName">Contact Name</label>
+                                <input type="text" class="form-control" id="InputContactName" name="InputContactName" aria-describedby="ContactNameHelp" placeholder="Contact Name" required>
+                                <small id="ContactNameHelp" class="form-text text-muted"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="InputContactNumber">Contact Number</label>
+                                <input type="text" class="form-control" id="InputContactNumber" name="InputContactNumber" aria-describedby="ContactNumberHelp" placeholder="Contact Number" required>
+                                <small id="ContactNumberHelp" class="form-text text-muted"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="InputContactEmail">Contact Email</label>
+                                <input type="email" class="form-control" id="InputContactEmail" name="InputContactEmail" aria-describedby="ContactEmailHelp" placeholder="Contact Email" required>
+                                <small id="ContactEmailHelp" class="form-text text-muted"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="InformationTextarea">Additional information</label>
+
+                                <textarea class="form-control" id="s_message" name="s_message" rows="3"></textarea>
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="g-recaptcha" data-sitekey="6LclMCwUAAAAAFoIP3GY-4xWx1uxlZhk_NojIkqy"></div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary" id="btnSubmit">Submit</button>
+                            </div>
+</form>
+                    <div class="clearFix"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div id="footer">
+
+            <div id="sub-footer">
+                <ul>
+                    <li id="copyright">FREYSSINET SAUDI ARABIA 2017. All rights reserved.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- begin JS -->
+
+    <script type="text/javascript" src="jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <script type="text/javascript" src="jquery.quicksand.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
